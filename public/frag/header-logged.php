@@ -28,8 +28,8 @@ $sql=new mysql();
   <?php elseif (isset($user["nombre"]))  : ?>
   <li> <a href="perfil.php"><?=$user["nombre"]?></a></li>
   <?php endif; else: ?>
-  <li>    <a href="register.php">Crear cuenta</a></li>
-  <li>   <a href="login.php">Iniciar sesion</a></li>
+  <li>    <a href="/register">Crear cuenta</a></li>
+  <li>   <a href="/login">Iniciar sesion</a></li>
   <?php endif;
 if (isset($_SESSION['id'])){ ?>
 <li> <a href="frag/logout.php">Logout </a></li>
@@ -43,7 +43,7 @@ if (isset($_SESSION['id'])){ ?>
 
 
 </ul>
-       <a href="../index.php">Inicio</a>
+       <a href="/index">Inicio</a>
     </div>
     <div class="lupa" >
 
@@ -59,8 +59,8 @@ if (isset($_SESSION['id'])){ ?>
         <img class="fotin si" src="img/<?=$user['direccionEmail']?>.png" alt="">
             <img class="fotin si" src="img/<?=$user['direccionEmail']?>.jpg" alt="">
       <?php endif; else: ?>
-       <a href="register.php">Crear cuenta</a>
-        <a href="login.php">Iniciar sesion</a>
+       <a href="/register">Crear cuenta</a>
+        <a href="/login">Iniciar sesion</a>
       <?php endif; ?>
 
         <input type="search" name="search" value=""><?php
@@ -69,20 +69,20 @@ if (isset($_SESSION['id'])){ ?>
 
  <?php } ?>
 
-      <img src="../img/search1.png" alt="">
+      <img src="/img/search1.png" alt="">
     </div>
   </div>
   <div class="nav">
     <div class="opcion">
-      <img src="../img/home.png" alt="">
+      <img src="/img/home.png" alt="">
       <a href="index.php">Inicio</a>
     </div>
     <div class="opcion">
-      <img src="../img/service.png" alt="">
+      <img src="/img/service.png" alt="">
           <a href="">Servicios</a>
     </div>
     <div class="opcion seva" >
-      <img src="../img/chango.png" alt="">
+      <img src="/img/chango.png" alt="">
           <a href="">Carrito</a>
     </div>
     <div class="opcion desktop">
@@ -99,5 +99,5 @@ if (isset($_SESSION['id'])){ ?>
 </header>
 
 <div class="med">
-  <img src="../img/este.png" alt="">
+  <img src="/img/este.png" alt="">
 </div>
